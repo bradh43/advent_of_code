@@ -10,7 +10,7 @@ abstract class BaseDay {
     public BaseDay() {
         // Get Concrete Class name that extends it, i.e. Day1
         this.day = this.getClass().getCanonicalName();
-        final String INPUT_FILE = day + ".txt";
+        final String INPUT_FILE = "2022/" + day + ".txt";
 
         System.out.println("===== " + day + " =====");
 
