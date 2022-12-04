@@ -1,9 +1,19 @@
+package src.Day2;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class Day2 extends BaseDay {
+import src.Solution;
+
+
+public class Answer extends Solution {
+
+    public Answer() {
+        super();
+    }
 
     @Override
+    protected
     void solve(BufferedReader reader) throws IOException {
         
         // Rock Paper Scissors class

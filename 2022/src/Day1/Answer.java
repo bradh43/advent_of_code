@@ -1,12 +1,19 @@
+package src.Day1;
+
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.PriorityQueue;
 
-public class Day1 extends BaseDay {
+import src.Solution;
+
+public class Answer extends Solution {
+
+    public Answer() {
+        super(true);
+    }
 
     @Override
+    protected
     void solve(BufferedReader reader) throws IOException {
         int sumSize = 3;
         int sum = 0;

@@ -1,8 +1,16 @@
+package src.Day3;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.HashSet;
 
-public class Day3 extends BaseDay {
+import src.Solution;
+
+public class Answer extends Solution {
+
+    public Answer() {
+        super();
+    }
 
     public static char defaultZeroChar = 'a' - 1;
 
@@ -55,6 +63,7 @@ public class Day3 extends BaseDay {
     }
 
     @Override
+    protected
     void solve(BufferedReader reader) throws IOException {
 
         int sum = 0;

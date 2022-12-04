@@ -1,4 +1,8 @@
+package src;
+
 import java.lang.reflect.InvocationTargetException;
+
+import src.*;
 
 public class Advent {
     
@@ -6,13 +10,13 @@ public class Advent {
 
     public static void main(String[] args) {
         System.out.println("Advent of Code 2022");
-        solveAll();
-        // solveLast();
+        // solveAll();
+        solveLast();
     }
     
-    public static void solveDay(String day) {
+    public static void solveDay(int day) {
         try {
-            Class<?> cls = Class.forName(day);
+            Class<?> cls = Class.forName("src.Day" + day + ".Answer");
             cls.getDeclaredConstructor().newInstance();
         } catch (IllegalArgumentException | SecurityException | ClassNotFoundException | NoSuchMethodException 
             | InvocationTargetException | IllegalAccessException | InstantiationException ex) {
@@ -23,12 +27,12 @@ public class Advent {
     }
 
     public static void solveLast() {
-        solveDay("Day" + adventDay);
+        solveDay(adventDay);
     }
     
     public static void solveAll() {
         for (int day = 1; day <= adventDay; day++) {
-            solveDay("Day" + day);
+            solveDay(day);
         }
     }
 }
