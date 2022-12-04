@@ -40,8 +40,8 @@ public class Day1 extends BaseDay {
             max = num;
         }
         
-        System.out.println("Part 1: " + max);
-        System.out.println("Part 2: " + topSum);
+        System.out.println("Part 1: " + max); // 69206
+        System.out.println("Part 2: " + topSum); // 197400
         
     }
 

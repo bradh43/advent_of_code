@@ -57,8 +57,8 @@ public class Day2 extends BaseDay {
             total2 += rps.score2();
         }
         
-        System.out.println("Part 1: " + total);
-        System.out.println("Part 2: " + total2);
+        System.out.println("Part 1: " + total); // 17189
+        System.out.println("Part 2: " + total2); // 13490
     }
 
 }
