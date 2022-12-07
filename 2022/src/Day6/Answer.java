@@ -41,14 +41,10 @@ public class Answer extends Solution {
     protected
     void solve(BufferedReader reader) throws IOException {
 
-        int firstMarker = -1;
-        int firstMarker2 = -1;
+        String line = reader.readLine();
 
-        String line;
-        while ((line = reader.readLine()) != null) {
-            firstMarker = findFirstMarker(line, 4);
-            firstMarker2 = findFirstMarker(line, 14);
-        }
+        int firstMarker = findFirstMarker(line, 4);
+        int firstMarker2 = findFirstMarker(line, 14);
         
         System.out.println("Part 1: " + firstMarker); // 1929
         System.out.println("Part 2: " + firstMarker2); // 3298
