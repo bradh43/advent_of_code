@@ -51,6 +51,8 @@ public abstract class Solution {
             BufferedReader reader = new BufferedReader(fileReader);
             if (reader.ready()) {
                 solve(reader);
+            } else {
+                System.out.println("File: " + inputFile + " is empty");
             }
             System.out.println();
             reader.close();

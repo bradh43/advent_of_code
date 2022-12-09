@@ -6,7 +6,7 @@ import src.*;
 
 public class Advent {
     
-    public static int adventDay = 6;
+    public static int adventDay = 8;
 
     public static void main(String[] args) {
         System.out.println("Advent of Code 2022");
