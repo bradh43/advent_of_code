@@ -3,9 +3,7 @@ package src.Day8;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.function.BiFunction;
 
 import src.Solution;
 
@@ -34,7 +32,7 @@ public class Answer extends Solution {
         int[][] treeData = data.stream().map(n -> n.stream().mapToInt(i->i).toArray()).toArray(int[][]::new);
         return new Forrest(treeData);
     }
-    
+
     @Override
     protected
     void solve(BufferedReader reader) throws IOException {
