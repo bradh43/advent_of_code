@@ -8,7 +8,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.PriorityQueue;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 import src.Solution;
 
@@ -39,17 +38,14 @@ public class Answer extends Solution {
             }
             // Read operation
             line = reader.readLine();
-            // Function<Integer, Integer> operation;
             Function<BigInteger, BigInteger> operation;
             String[] stringOperation = line.split("[^+*\\d]+");
             if (stringOperation.length <= 2) {
                 if (stringOperation[1].equals("*")) {
-                    // operation = (item) -> item * item;
                     operation = (item) -> {
                         return item.multiply(item);
                     };
                 } else {
-                    // operation = (item) -> item + item;
                     operation = (item) -> {
                         return item.add(item);
                     };
@@ -58,12 +54,10 @@ public class Answer extends Solution {
             } else {
                 int operationNumber = Integer.parseInt(stringOperation[2]);
                 if (stringOperation[1].equals("*")) {
-                    // operation = (item) -> item * operationNumber;
                     operation = (item) -> {
                         return item.multiply(BigInteger.valueOf(operationNumber));
                     };
                 } else {
-                    // operation = (item) -> item + operationNumber;
                     operation = (item) -> {
                         return item.add(BigInteger.valueOf(operationNumber));
                     };
@@ -123,7 +117,6 @@ public class Answer extends Solution {
     void solve(BufferedReader reader) throws IOException {
 
         List<Monkey> monkeys = loadMonkeys(reader);
-        // List<Monkey> monkeysCopy = monkeys.stream().collect(Collectors.toList());
         List<Monkey> monkeysCopy = new LinkedList<>();
         for(Monkey monkey : monkeys) {
             Monkey copy = monkey.clone();

@@ -57,7 +57,6 @@ public class Monkey {
         List<BigInteger> copyItems = new LinkedList<>();
         for (BigInteger item : this.items) {
             copyItems.add(item);
-
         }
         return new Monkey(copyItems, this.operation, this.worryTest, trueMonkey, falseMonkey);
     }
